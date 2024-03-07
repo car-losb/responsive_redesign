@@ -1,0 +1,483 @@
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+html, body { margin: 0; padding: 0; } 
+
+.site-header {
+    background-color: #003893; /* Blue color */
+    vertical-align: auto;
+    width: 100%; /* Full width */
+    height: 4.2vw;
+    min-height: 40px;
+    position: fixed; /* Fixed position */
+    top: 0; /* At the top of the viewport */
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.logo-container img {
+    width: 18%;
+    min-width: 50px;
+    height: auto;
+    margin-left: 4vw;
+}
+
+.logo-container {
+    position: fixed;
+    background-color: white;
+    height: 7vw;
+    min-height: 40px;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 4.2vw;
+    z-index: 1000;
+}
+
+.navigation ul {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Use flexbox */
+    margin-right: 0px;
+    margin-left: 10.2vw;
+    
+}
+
+.navigation ul li {
+    margin-right: 4vw; /* Adjust the distance between each link */
+}
+
+.navigation ul li a {
+    font-family: "Julius Sans One", sans-serif; /* Set font family */
+    font-size: 2.2vw; /* Set font size */
+    color: rgb(9, 9, 9); /* Text color */
+    text-decoration: none; /* Remove default underline */
+}
+
+.navigation ul li:first-child {
+    margin-left: 2.3vw; /* Set margin for the first link */
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.additional-links {
+    display: flex; /* Use flexbox */ /* Center items vertically */
+    float: right;
+    padding-top: 1.5vw; /* Adjust spacing if needed */
+    padding-bottom: 1.5vw;
+    padding-right: 2.0vw;
+}
+
+.additional-links ul {
+    list-style: none; /* Remove default list styles */
+}
+
+.additional-links ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-left: 1.9vw; /* Add spacing between list items */
+}
+
+.additional-links ul li img {
+    margin-left: 5px; /* Add spacing between "More" link and arrow */
+    vertical-align:text-bottom;
+    width: 0.9vw; /* Adjust width of the arrow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.additional-links ul li a {
+    color: #fff; /* Text color */
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.2vw;
+    text-decoration: none; /* Remove default underline */
+}
+
+.banner-container {
+    padding-top: 11.2vw;
+    padding-bottom: 5.0vw;
+    position: relative;
+    
+}
+
+.banner-container img {
+    width: 100%;
+    height: 30vw;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrows img {
+    height: 5vw;
+    width: auto;
+    left: 0px;
+}
+
+.arrows img:hover {
+    filter: hue-rotate(90deg); /* Adjust brightness to make it yellow */
+    transform: scale(1.2);
+}
+
+.caption {
+    position: absolute; /* Position the caption relative to the banner container */
+ /* Adjust the distance from the bottom */
+     /* Adjust the distance from the left */
+    color: rgb(0, 0, 0); /* Caption text color */
+    font-size: 1.5vw; /* Caption font size */
+    font-weight: bold;
+    font-family: "Kaisei Decol";
+    right: 0.9vw;
+}
+
+.red-banner {
+    background-color: #86262A;
+    height: auto; /* Adjust the height as needed */
+    margin-bottom: 5.0vw;
+    font-family: "Kaisei Decol";
+    color: white;
+}
+
+.red-banner h2 {
+    font-weight: bold;
+    font-size: 2.17vw;
+    margin-left: 4.93vw;
+    margin-right: 4.93vw;
+    padding-top: 2.9vw;
+}
+
+.red-banner p {
+    margin-left: 4.93vw;
+    margin-right: 4.93vw;
+    padding-bottom: 3.2vw;
+    font-size: 1.45vw;
+    line-height: 1.5;
+}
+
+.upcoming-events {
+    text-align: center;
+}
+
+.upcoming-events h1, .newsletter h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2.2vw;
+}
+
+.event-images-wrapper {
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 20px 0; /* Add some padding for spacing */
+    position: relative;
+}
+
+.event-images-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.image-container {
+    width: 30vw;
+    height: 28vw;
+    border: 0.3vw solid black; /* Black border */
+    margin: 2.0vw; /* Adjust margin as needed */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10.0vw;
+}
+
+.event-images {
+    display: inline-flex;
+    
+}
+
+.event-images img {
+    height: 25vw;
+    min-height: 180px;
+    margin: 3.0vw;
+}
+
+.image-container:hover {
+    border-color: #F8D216; /* Change border color to yellow on hover */
+    transform: scale(1.05); /* Scale up the image container slightly on hover */
+}
+
+.image-container:hover img {
+    transition: transform 0.3s ease; /* Smooth transition for the image scaling */
+    transform: scale(1.02); /* Scale up the image slightly more on hover */
+}
+
+.event-caption {
+    position: absolute;
+    color: black;
+    width: 100%;
+    text-align: center; /* Align text to the left */
+    padding: 10px; /* Add padding to give space around the text */
+    margin-top: 35vw;
+}
+
+.event-caption h1,
+.event-caption p {
+    margin: 5px 0;
+    font-size: 1.2vw;
+    font-family: "Kaisei Decol";
+}
+
+.event-caption h1 {
+    font-weight: bold;
+}
+
+.email-signup {
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 8vw;
+    vertical-align:auto;
+}
+
+.email-signup h2 {
+    font-size: 1.7vw;
+    font-family: "Kaisei Decol";
+    display: inline;
+    margin-right: 0.7vw; /* Adjust as needed */
+    font-weight: lighter;
+}
+
+.input-box {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.input-box input[type="email"] {
+    padding: 10px;
+    width: 50vw;
+    min-width: 400px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1.7vw;
+    font-family: "Kaisei Decol";
+}
+
+.input-box button {
+    padding: 10px 20px;
+    font-family: "Kaisei Decol";
+    color: black;
+    border: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.7vw;
+    margin-left: 10px;
+}
+
+.input-box button:hover {
+    background-color: #F8D216;
+}
+
+.pre-footer {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    text-align: left;
+    margin: 5vw;
+}
+
+.hours-container,
+.address-container {
+    display: inline-block;
+    flex: 1;
+
+    width: 30%;
+
+}
+
+.address-container {
+    margin-right: 25vw; /* Add margin between containers */
+}
+
+.pre-footer h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.7vw;
+    line-height: 2;
+}
+
+.pre-footer p {
+    font-family: "Julius Sans One", sans-serif;
+    margin: 0;
+    font-size: 1.0vw;
+    line-height: 2; /* Adjust line height */
+}
+
+.pre-footer img {
+    height: 9vw;
+    min-height: 70px; /* Maintain aspect ratio */
+    margin: auto;
+}
+
+.site-footer {
+    background-color: #003893; /* Blue color */
+    width: 100%; /* Full width */
+    height: 6.2vw; /* Height of the header/footer */
+    min-height: 40px;
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    bottom: 0;
+}
+
+.social-icons {
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Ensure icons are vertically centered */
+}
+
+.social-icons img {
+    width: 2.9vw;
+    height: 2.9vw; /* Adjust height as needed */
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 2.17vw; /* Add spacing between icons */
+}
+
+@media screen and (max-width: 800px) {
+    .additional-links {
+        justify-content: center; /* Center align the additional links */
+        float: none; /* Remove the float */
+        padding-right: 0; /* Remove the right padding */
+    }
+
+    .additional-links ul li {
+       margin-left: 10px;
+    }
+
+    .additional-links ul li a {
+        font-size: 10px;
+    }
+    .logo-container {
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center; /* Center align the logo and navigation */
+        height: auto; /* Adjust height dynamically */
+    }
+
+    .navigation {
+        margin-left: 0; /* Remove the left margin for the navigation */
+    }
+
+    .logo-container img {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .navigation ul {
+        display:flex;
+        flex-direction:row; /* Display the navigation links horizontally */
+        justify-content: center; /* Center align the navigation links horizontally */
+        margin-bottom: 10px;
+    }
+
+    .navigation ul li a {
+        font-size: 20px;
+    }
+
+    .banner-container {
+        padding-top: 140px;
+    }
+
+    .arrows {
+        top: 60%;
+    }
+
+    .red-banner h2 {
+        font-size: 15px;
+    }
+    
+    .red-banner p {
+        font-size: 10px;
+    }
+
+    .upcoming-events h1, .newsletter h1 {
+        font-size: 20px;
+    }
+
+    .image-container {
+        width: 220px;
+        height: 200px;
+        border: 0.3vw solid black; /* Black border */
+        margin: 20px; /* Adjust margin as needed */
+        margin-bottom: 10.0vw;
+    }
+
+    .event-caption {/* Align text to the left */
+        padding: 10px; /* Add padding to give space around the text */
+        margin-top: 250px;
+    }
+    
+    .event-caption h1,
+    .event-caption p {
+        margin: 10px;
+        font-size: 10px;
+        line-height: 0.5;
+    }
+
+    .email-signup h2 {
+        font-size: 15px;
+    }
+
+    .input-box input[type="email"] {
+        font-size: 15px;
+    }
+    
+    .input-box button {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+
+    .hours-container,
+    .address-container {
+        width: 100%; /* Set width to 100% */
+        margin: 20px; /* Remove margin */
+        margin-bottom: 20px; /* Add some space between elements */
+
+    }
+
+    .pre-footer h1 {
+        font-size: 15px;
+    }
+    
+    .pre-footer p {
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .email-signup h2 {
+        display: none; /* Hide the "Subscribe" text */
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .navigation ul li a {
+        font-size: 15px;
+    }
+
+    .upcoming-events h1, .newsletter h1 {
+        font-size: 15px;
+    }
+
+    .event-caption h1,
+    .event-caption p {
+        margin: 10px;
+        font-size: 10px;
+        line-height: 0.5;
+    }
+}
+
