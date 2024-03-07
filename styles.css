@@ -5,6 +5,7 @@ h1, h2, h3, p, ul, li {
 
 html, body { margin: 0; padding: 0; } 
 
+/* Header/Outreach Navigation Bar */
 .site-header {
     background-color: #003893; 
     vertical-align: auto;
@@ -16,6 +17,8 @@ html, body { margin: 0; padding: 0; }
     left: 0;
     z-index: 1000; 
 }
+
+/* Museum Website Navigation Bar */
 
 .logo-container img {
     width: 18%;
@@ -34,6 +37,8 @@ html, body { margin: 0; padding: 0; }
     margin-top: 4.2vw;
     z-index: 1000;
 }
+
+/* Outreach LInks */
 
 .navigation ul {
     list-style: none; 
@@ -62,6 +67,8 @@ html, body { margin: 0; padding: 0; }
     text-decoration: underline; 
 }
 
+/* Website Navigation Links */
+
 .additional-links {
     display: flex; 
     float: right;
@@ -88,6 +95,8 @@ html, body { margin: 0; padding: 0; }
     font-size: 1.2vw;
     text-decoration: none; 
 }
+
+/* Prototype Image Carousel Banner */
 
 .banner-container {
     padding-top: 11.2vw;
@@ -130,6 +139,8 @@ html, body { margin: 0; padding: 0; }
     right: 0.9vw;
 }
 
+/* Welcome Banner */
+
 .red-banner {
     background-color: #86262A;
     height: auto; 
@@ -153,6 +164,8 @@ html, body { margin: 0; padding: 0; }
     font-size: 1.45vw;
     line-height: 1.5;
 }
+
+/* Upcoming Events Section */
 
 .upcoming-events {
     text-align: center;
@@ -228,6 +241,8 @@ html, body { margin: 0; padding: 0; }
     font-weight: bold;
 }
 
+/* Newsletter Section */
+
 .email-signup {
     text-align: center;
     margin-top: 4vw;
@@ -273,6 +288,8 @@ html, body { margin: 0; padding: 0; }
     background-color: #F8D216;
 }
 
+/* Hourse and Location Section */
+
 .pre-footer {
     display: flex;
     justify-content: space-between; 
@@ -305,6 +322,8 @@ html, body { margin: 0; padding: 0; }
     min-height: 70px; 
     margin: auto;
 }
+
+/* Footer with Socials */
 
 .site-footer {
     background-color: #003893; 
