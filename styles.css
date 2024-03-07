@@ -6,15 +6,15 @@ h1, h2, h3, p, ul, li {
 html, body { margin: 0; padding: 0; } 
 
 .site-header {
-    background-color: #003893; /* Blue color */
+    background-color: #003893; 
     vertical-align: auto;
-    width: 100%; /* Full width */
+    width: 100%;
     height: 4.2vw;
     min-height: 40px;
-    position: fixed; /* Fixed position */
-    top: 0; /* At the top of the viewport */
+    position: fixed;
+    top: 0;
     left: 0;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000; 
 }
 
 .logo-container img {
@@ -29,68 +29,64 @@ html, body { margin: 0; padding: 0; }
     background-color: white;
     height: 7vw;
     min-height: 40px;
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    align-items: center;
     margin-top: 4.2vw;
     z-index: 1000;
 }
 
 .navigation ul {
-    list-style: none; /* Remove default list styles */
-    display: flex; /* Use flexbox */
+    list-style: none; 
+    display: flex; 
     margin-right: 0px;
     margin-left: 10.2vw;
     
 }
 
 .navigation ul li {
-    margin-right: 4vw; /* Adjust the distance between each link */
+    margin-right: 4vw;
 }
 
 .navigation ul li a {
-    font-family: "Julius Sans One", sans-serif; /* Set font family */
-    font-size: 2.2vw; /* Set font size */
-    color: rgb(9, 9, 9); /* Text color */
-    text-decoration: none; /* Remove default underline */
+    font-family: "Julius Sans One", sans-serif; 
+    font-size: 2.2vw; 
+    color: rgb(9, 9, 9); 
+    text-decoration: none; 
 }
 
 .navigation ul li:first-child {
-    margin-left: 2.3vw; /* Set margin for the first link */
+    margin-left: 2.3vw; 
 }
 
 .navigation ul li a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
 }
 
 .additional-links {
-    display: flex; /* Use flexbox */ /* Center items vertically */
+    display: flex; 
     float: right;
-    padding-top: 1.5vw; /* Adjust spacing if needed */
+    padding-top: 1.5vw; 
     padding-bottom: 1.5vw;
     padding-right: 2.0vw;
 }
 
-.additional-links ul {
-    list-style: none; /* Remove default list styles */
-}
-
 .additional-links ul li {
-    display: inline-block; /* Display list items horizontally */
-    margin-left: 1.9vw; /* Add spacing between list items */
+    display: inline-block; 
+    margin-left: 1.9vw; 
 }
 
 .additional-links ul li img {
-    margin-left: 5px; /* Add spacing between "More" link and arrow */
+    margin-left: 5px; 
     vertical-align:text-bottom;
-    width: 0.9vw; /* Adjust width of the arrow */
-    height: auto; /* Maintain aspect ratio */
+    width: 0.9vw; 
+    height: auto; 
 }
 
 .additional-links ul li a {
-    color: #fff; /* Text color */
+    color: #fff; 
     font-family: "Julius Sans One", sans-serif;
     font-size: 1.2vw;
-    text-decoration: none; /* Remove default underline */
+    text-decoration: none; 
 }
 
 .banner-container {
@@ -121,16 +117,14 @@ html, body { margin: 0; padding: 0; }
 }
 
 .arrows img:hover {
-    filter: hue-rotate(90deg); /* Adjust brightness to make it yellow */
+    filter: hue-rotate(90deg); 
     transform: scale(1.2);
 }
 
 .caption {
-    position: absolute; /* Position the caption relative to the banner container */
- /* Adjust the distance from the bottom */
-     /* Adjust the distance from the left */
-    color: rgb(0, 0, 0); /* Caption text color */
-    font-size: 1.5vw; /* Caption font size */
+    position: absolute; 
+    color: rgb(0, 0, 0); 
+    font-size: 1.5vw; 
     font-weight: bold;
     font-family: "Kaisei Decol";
     right: 0.9vw;
@@ -138,7 +132,7 @@ html, body { margin: 0; padding: 0; }
 
 .red-banner {
     background-color: #86262A;
-    height: auto; /* Adjust the height as needed */
+    height: auto; 
     margin-bottom: 5.0vw;
     font-family: "Kaisei Decol";
     color: white;
@@ -173,8 +167,8 @@ html, body { margin: 0; padding: 0; }
 
 .event-images-wrapper {
     overflow-x: auto;
-    white-space: nowrap; /* Prevent line breaks */
-    padding: 20px 0; /* Add some padding for spacing */
+    white-space: nowrap; 
+    padding: 20px 0;
     position: relative;
 }
 
@@ -185,11 +179,11 @@ html, body { margin: 0; padding: 0; }
 .image-container {
     width: 30vw;
     height: 28vw;
-    border: 0.3vw solid black; /* Black border */
-    margin: 2.0vw; /* Adjust margin as needed */
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    border: 0.3vw solid black; 
+    margin: 2.0vw; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     margin-bottom: 10.0vw;
 }
 
@@ -205,21 +199,21 @@ html, body { margin: 0; padding: 0; }
 }
 
 .image-container:hover {
-    border-color: #F8D216; /* Change border color to yellow on hover */
-    transform: scale(1.05); /* Scale up the image container slightly on hover */
+    border-color: #F8D216; 
+    transform: scale(1.05); 
 }
 
 .image-container:hover img {
-    transition: transform 0.3s ease; /* Smooth transition for the image scaling */
-    transform: scale(1.02); /* Scale up the image slightly more on hover */
+    transition: transform 0.3s ease; 
+    transform: scale(1.02); 
 }
 
 .event-caption {
     position: absolute;
     color: black;
     width: 100%;
-    text-align: center; /* Align text to the left */
-    padding: 10px; /* Add padding to give space around the text */
+    text-align: center; 
+    padding: 10px; 
     margin-top: 35vw;
 }
 
@@ -245,7 +239,7 @@ html, body { margin: 0; padding: 0; }
     font-size: 1.7vw;
     font-family: "Kaisei Decol";
     display: inline;
-    margin-right: 0.7vw; /* Adjust as needed */
+    margin-right: 0.7vw; 
     font-weight: lighter;
 }
 
@@ -281,7 +275,7 @@ html, body { margin: 0; padding: 0; }
 
 .pre-footer {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
+    justify-content: space-between; 
     text-align: left;
     margin: 5vw;
 }
@@ -290,64 +284,58 @@ html, body { margin: 0; padding: 0; }
 .address-container {
     display: inline-block;
     flex: 1;
-
     width: 30%;
 
 }
-
-.address-container {
-    margin-right: 25vw; /* Add margin between containers */
-}
-
 .pre-footer h1 {
     font-family: "Julius Sans One", sans-serif;
-    font-size: 1.7vw;
+    font-size: 2.2vw;
     line-height: 2;
 }
 
 .pre-footer p {
     font-family: "Julius Sans One", sans-serif;
     margin: 0;
-    font-size: 1.0vw;
-    line-height: 2; /* Adjust line height */
+    font-size: 1.7vw;
+    line-height: 2;
 }
 
 .pre-footer img {
     height: 9vw;
-    min-height: 70px; /* Maintain aspect ratio */
+    min-height: 70px; 
     margin: auto;
 }
 
 .site-footer {
-    background-color: #003893; /* Blue color */
-    width: 100%; /* Full width */
-    height: 6.2vw; /* Height of the header/footer */
+    background-color: #003893; 
+    width: 100%; 
+    height: 6.2vw; 
     min-height: 40px;
     left: 0;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000; 
     bottom: 0;
 }
 
 .social-icons {
-    display: flex; /* Use flexbox */
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center; /* Center items vertically */
-    height: 100%; /* Ensure icons are vertically centered */
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 100%; 
 }
 
 .social-icons img {
     width: 2.9vw;
-    height: 2.9vw; /* Adjust height as needed */
+    height: 2.9vw; 
     min-width: 20px;
     min-height: 20px;
-    margin-right: 2.17vw; /* Add spacing between icons */
+    margin-right: 2.17vw; 
 }
 
 @media screen and (max-width: 800px) {
     .additional-links {
-        justify-content: center; /* Center align the additional links */
-        float: none; /* Remove the float */
-        padding-right: 0; /* Remove the right padding */
+        justify-content: center; 
+        float: none; 
+        padding-right: 0;
     }
 
     .additional-links ul li {
@@ -362,12 +350,12 @@ html, body { margin: 0; padding: 0; }
         display: flex;
         width: 100%;
         flex-direction: column;
-        align-items: center; /* Center align the logo and navigation */
-        height: auto; /* Adjust height dynamically */
+        align-items: center; 
+        height: auto;
     }
 
     .navigation {
-        margin-left: 0; /* Remove the left margin for the navigation */
+        margin-left: 0;
     }
 
     .logo-container img {
@@ -377,8 +365,8 @@ html, body { margin: 0; padding: 0; }
 
     .navigation ul {
         display:flex;
-        flex-direction:row; /* Display the navigation links horizontally */
-        justify-content: center; /* Center align the navigation links horizontally */
+        flex-direction:row; 
+        justify-content: center; 
         margin-bottom: 10px;
     }
 
@@ -409,13 +397,13 @@ html, body { margin: 0; padding: 0; }
     .image-container {
         width: 220px;
         height: 200px;
-        border: 0.3vw solid black; /* Black border */
-        margin: 20px; /* Adjust margin as needed */
+        border: 0.3vw solid black;
+        margin: 20px;
         margin-bottom: 10.0vw;
     }
 
-    .event-caption {/* Align text to the left */
-        padding: 10px; /* Add padding to give space around the text */
+    .event-caption {
+        padding: 10px; 
         margin-top: 250px;
     }
     
@@ -442,9 +430,9 @@ html, body { margin: 0; padding: 0; }
 
     .hours-container,
     .address-container {
-        width: 100%; /* Set width to 100% */
-        margin: 20px; /* Remove margin */
-        margin-bottom: 20px; /* Add some space between elements */
+        width: 100%; 
+        margin: 20px; 
+        margin-bottom: 20px; 
 
     }
 
@@ -460,7 +448,7 @@ html, body { margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) {
     .email-signup h2 {
-        display: none; /* Hide the "Subscribe" text */
+        display: none; 
     }
 }
 
